@@ -1,0 +1,89 @@
+sui client call --package $PACKAGE --module tic_tac_toe --function create_game --args $PLAYER_X $PLAYER_O --gas $ADMIN_GAS --gas-budget 20000000
+[warn] Client/Server api version mismatch, client api version : 0.32.0, server api version : 0.33.0
+----- Transaction Digest ----
+8LkokFo6DYe4CKEaVUwjQgLT23hAhzzGjgvh3ea2Pkuk
+----- Transaction Data ----
+Transaction Signature: [Signature(Secp256k1SuiSignature(Secp256k1SuiSignature([1, 107, 14, 133, 30, 191, 57, 246, 42, 124, 22, 172, 236, 95, 32, 23, 97, 189, 24, 176, 101, 228, 33, 41, 137, 2, 241, 77, 251, 149, 79, 238, 94, 86, 85, 176, 206, 115, 86, 65, 217, 249, 24, 98, 215, 93, 234, 72, 205, 50, 164, 227, 130, 118, 117, 214, 129, 211, 142, 21, 220, 23, 127, 188, 138, 2, 146, 177, 6, 193, 165, 47, 84, 149, 180, 90, 222, 84, 97, 68, 150, 99, 91, 171, 117, 211, 67, 74, 245, 132, 148, 48, 189, 77, 103, 193, 88, 45])))]
+Transaction Kind : Programmable
+Inputs: [Pure(SuiPureValue { value_type: Some(Address), value: "0xf326523f79d8615a4b7b8869ac89ea028d8434e192a96ea52f4d43b3a08cb731" }), Pure(SuiPureValue { value_type: Some(Address), value: "0x0c66fff8a62348aeb7b217a52447ef55fcc48dacb460c2a0a3feb870c3ee94eb" })]
+Commands: [
+  MoveCall(0xfa411ae9675310eab744b345c7cca7d4844f538887ac4d96e9162e75b719846f::tic_tac_toe::create_game(Input(0),Input(1))),
+]
+
+Sender: 0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275
+Gas Payment: Object ID: 0xd139e0819cdb994254910841b07a92e04f7dc9f4038101adb50130912e627497, version: 0x554b, digest: 8mBpaQrsM9bv5t8nTFPjnsSc1MrdjWr1RW43gXcT2g5i 
+Gas Owner: 0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275
+Gas Price: 1000
+Gas Budget: 20000000
+
+----- Transaction Effects ----
+Status : Success
+Created Objects:
+  - ID: 0x2e234b8ced5274374c62d6348301bc31c882c312b285177e26b382d2b4706624 , Owner: Account Address ( 0x0c66fff8a62348aeb7b217a52447ef55fcc48dacb460c2a0a3feb870c3ee94eb )
+  - ID: 0x68e4e4a82bd2e80c9847c7548cd75bf55d3b5aacfda10965c2fe8e72178467b4 , Owner: Account Address ( 0xf326523f79d8615a4b7b8869ac89ea028d8434e192a96ea52f4d43b3a08cb731 )
+  - ID: 0xeeee2a76654ae29cf81ba69cf334c472d85cc54205d05f6c7c91195232e8c2aa , Owner: Account Address ( 0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275 )
+Mutated Objects:
+  - ID: 0xd139e0819cdb994254910841b07a92e04f7dc9f4038101adb50130912e627497 , Owner: Account Address ( 0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275 )
+
+----- Events ----
+Array []
+----- Object changes ----
+Array [
+    Object {
+        "type": String("mutated"),
+        "sender": String("0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275"),
+        "owner": Object {
+            "AddressOwner": String("0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275"),
+        },
+        "objectType": String("0x2::coin::Coin<0x2::sui::SUI>"),
+        "objectId": String("0xd139e0819cdb994254910841b07a92e04f7dc9f4038101adb50130912e627497"),
+        "version": String("21836"),
+        "previousVersion": String("21835"),
+        "digest": String("5XHAUPmCcTyLyTRPXMo7D5sajmwMpzsf86bGimqEUJdK"),
+    },
+    Object {
+        "type": String("created"),
+        "sender": String("0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275"),
+        "owner": Object {
+            "AddressOwner": String("0x0c66fff8a62348aeb7b217a52447ef55fcc48dacb460c2a0a3feb870c3ee94eb"),
+        },
+        "objectType": String("0xfa411ae9675310eab744b345c7cca7d4844f538887ac4d96e9162e75b719846f::tic_tac_toe::MarkMintCap"),
+        "objectId": String("0x2e234b8ced5274374c62d6348301bc31c882c312b285177e26b382d2b4706624"),
+        "version": String("21836"),
+        "digest": String("12DWgRxJGDceY5dibPKoeh2BxQk8mRF4YsanEHv7fEHb"),
+    },
+    Object {
+        "type": String("created"),
+        "sender": String("0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275"),
+        "owner": Object {
+            "AddressOwner": String("0xf326523f79d8615a4b7b8869ac89ea028d8434e192a96ea52f4d43b3a08cb731"),
+        },
+        "objectType": String("0xfa411ae9675310eab744b345c7cca7d4844f538887ac4d96e9162e75b719846f::tic_tac_toe::MarkMintCap"),
+        "objectId": String("0x68e4e4a82bd2e80c9847c7548cd75bf55d3b5aacfda10965c2fe8e72178467b4"),
+        "version": String("21836"),
+        "digest": String("CRGmgQZ4KxVSGvf8nzdSVAU76PxEjgvBx6ErpV1iTZzi"),
+    },
+    Object {
+        "type": String("created"),
+        "sender": String("0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275"),
+        "owner": Object {
+            "AddressOwner": String("0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275"),
+        },
+        "objectType": String("0xfa411ae9675310eab744b345c7cca7d4844f538887ac4d96e9162e75b719846f::tic_tac_toe::TicTacToe"),
+        "objectId": String("0xeeee2a76654ae29cf81ba69cf334c472d85cc54205d05f6c7c91195232e8c2aa"),
+        "version": String("21836"),
+        "digest": String("Eb35DqCiowaBdn1Tb4DQWeScfFdp4QveR7zmvL6izVFS"),
+    },
+]
+----- Balance changes ----
+Array [
+    Object {
+        "owner": Object {
+            "AddressOwner": String("0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275"),
+        },
+        "coinType": String("0x2::sui::SUI"),
+        "amount": String("-6177880"),
+    },
+]
+
+to play the game: follow instructions here: https://docs.sui.io/explore/tutorials

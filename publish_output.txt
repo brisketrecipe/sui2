@@ -1,0 +1,119 @@
+[warn] Client/Server api version mismatch, client api version : 0.32.0, server api version : 0.33.0
+INCLUDING DEPENDENCY Sui
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING Games
+Successfully verified dependencies on-chain against source.
+----- Transaction Digest ----
+BqdyHrpV2qWwg25A4txPZZaBXL6eAmbxenXyr1qqe7C5
+----- Transaction Data ----
+Transaction Signature: [Signature(Secp256k1SuiSignature(Secp256k1SuiSignature([1, 215, 114, 8, 72, 204, 214, 121, 162, 95, 100, 168, 41, 66, 90, 51, 146, 77, 20, 24, 90, 99, 176, 130, 59, 173, 20, 183, 244, 24, 15, 78, 247, 120, 156, 116, 21, 209, 48, 247, 129, 223, 51, 46, 76, 230, 81, 231, 152, 35, 28, 37, 124, 192, 67, 243, 183, 199, 252, 191, 22, 195, 245, 234, 129, 2, 146, 177, 6, 193, 165, 47, 84, 149, 180, 90, 222, 84, 97, 68, 150, 99, 91, 171, 117, 211, 67, 74, 245, 132, 148, 48, 189, 77, 103, 193, 88, 45])))]
+Transaction Kind : Programmable
+Inputs: [Pure(SuiPureValue { value_type: Some(Address), value: "0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275" })]
+Commands: [
+  Publish(_,0x0000000000000000000000000000000000000000000000000000000000000001,0x0000000000000000000000000000000000000000000000000000000000000002),
+  TransferObjects([Result(0)],Input(0)),
+]
+
+Sender: 0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275
+Gas Payment: Object ID: 0xd139e0819cdb994254910841b07a92e04f7dc9f4038101adb50130912e627497, version: 0x5549, digest: F4mNk43rCoMgVebhgAvScb9316BwW4oVFaYU9iARjuJE 
+Gas Owner: 0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275
+Gas Price: 1000
+Gas Budget: 200000000
+
+----- Transaction Effects ----
+Status : Success
+Created Objects:
+  - ID: 0x014029e140ce310bdd2f4c6047b3d3748b7c33b817336427522efa538fc3256a , Owner: Account Address ( 0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275 )
+  - ID: 0x6adeb07d51fe06be9542af68dde4dcd0e78c475786372a7382e09091e264b152 , Owner: Account Address ( 0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275 )
+  - ID: 0x6d9c3b33065cddf42e0c54b48d0a03d7e39b5394c9e14d651de4174076433afe , Owner: Immutable
+  - ID: 0xb79d0135253bc094c60e1a4296b8ec3662705261bd152c7f179c5e10634c1d63 , Owner: Account Address ( 0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275 )
+  - ID: 0xfa411ae9675310eab744b345c7cca7d4844f538887ac4d96e9162e75b719846f , Owner: Immutable
+Mutated Objects:
+  - ID: 0xd139e0819cdb994254910841b07a92e04f7dc9f4038101adb50130912e627497 , Owner: Account Address ( 0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275 )
+
+----- Events ----
+Array []
+----- Object changes ----
+Array [
+    Object {
+        "type": String("mutated"),
+        "sender": String("0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275"),
+        "owner": Object {
+            "AddressOwner": String("0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275"),
+        },
+        "objectType": String("0x2::coin::Coin<0x2::sui::SUI>"),
+        "objectId": String("0xd139e0819cdb994254910841b07a92e04f7dc9f4038101adb50130912e627497"),
+        "version": String("21834"),
+        "previousVersion": String("21833"),
+        "digest": String("6gDo17GMdKwR1UTQChENsw29DGmceij8W8F2UWs14E7v"),
+    },
+    Object {
+        "type": String("created"),
+        "sender": String("0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275"),
+        "owner": Object {
+            "AddressOwner": String("0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275"),
+        },
+        "objectType": String("0xfa411ae9675310eab744b345c7cca7d4844f538887ac4d96e9162e75b719846f::hero::GameAdmin"),
+        "objectId": String("0x014029e140ce310bdd2f4c6047b3d3748b7c33b817336427522efa538fc3256a"),
+        "version": String("21834"),
+        "digest": String("F3pFq2zRPXNGnPYArJYQ6vsLy3DNwYTcU3gd2dcHTdXf"),
+    },
+    Object {
+        "type": String("created"),
+        "sender": String("0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275"),
+        "owner": Object {
+            "AddressOwner": String("0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275"),
+        },
+        "objectType": String("0xfa411ae9675310eab744b345c7cca7d4844f538887ac4d96e9162e75b719846f::sea_hero::SeaHeroAdmin"),
+        "objectId": String("0x6adeb07d51fe06be9542af68dde4dcd0e78c475786372a7382e09091e264b152"),
+        "version": String("21834"),
+        "digest": String("F2KVcS28THgpTfS2mnS1HBDdGrep5rcMzLLE6UgPkQhF"),
+    },
+    Object {
+        "type": String("created"),
+        "sender": String("0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275"),
+        "owner": String("Immutable"),
+        "objectType": String("0xfa411ae9675310eab744b345c7cca7d4844f538887ac4d96e9162e75b719846f::hero::GameInfo"),
+        "objectId": String("0x6d9c3b33065cddf42e0c54b48d0a03d7e39b5394c9e14d651de4174076433afe"),
+        "version": String("21834"),
+        "digest": String("FmGvQtq9YsqP4U6h24ycfazkBwfqzAMVynRCcofxwcUx"),
+    },
+    Object {
+        "type": String("created"),
+        "sender": String("0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275"),
+        "owner": Object {
+            "AddressOwner": String("0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275"),
+        },
+        "objectType": String("0x2::package::UpgradeCap"),
+        "objectId": String("0xb79d0135253bc094c60e1a4296b8ec3662705261bd152c7f179c5e10634c1d63"),
+        "version": String("21834"),
+        "digest": String("Fsq9XErqHPUydStxuoxkPAjQdZUshmkBHjocWYdxbHf3"),
+    },
+    Object {
+        "type": String("published"),
+        "packageId": String("0xfa411ae9675310eab744b345c7cca7d4844f538887ac4d96e9162e75b719846f"),
+        "version": String("1"),
+        "digest": String("Bi5S9FNqzSMkLrpaHBcnQSREdwPt5UPLKrPb3VuC5T9u"),
+        "modules": Array [
+            String("drand_based_lottery"),
+            String("drand_based_scratch_card"),
+            String("drand_lib"),
+            String("hero"),
+            String("rock_paper_scissors"),
+            String("sea_hero"),
+            String("sea_hero_helper"),
+            String("shared_tic_tac_toe"),
+            String("tic_tac_toe"),
+        ],
+    },
+]
+----- Balance changes ----
+Array [
+    Object {
+        "owner": Object {
+            "AddressOwner": String("0x38ee009d5322b62bf9e3d3da6b0d99acb25a142a2fe5e987ade51b683202e275"),
+        },
+        "coinType": String("0x2::sui::SUI"),
+        "amount": String("-138785080"),
+    },
+]
